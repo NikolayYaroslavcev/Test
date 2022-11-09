@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link href="./css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./css/null.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/iconsfont.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <div data-modal-window="my_modal1" class="modal modal1">
+        <nav id="popup" class="header__contacts contacts">
+            <div class="contacts__items">
+                <div class="contacts__title"> Добавление контакта</div>
+                <p class="contacts__close close_modal_window _icon-close" id="popup_close"></p>
+            </div>
+            <fomr class="contacts__form">
+                <div class="contacts__block">
+                    <input type="text" placeholder="Введите ФИО" class="contacts__text">
+                    <input type="hidden" id="saveindex">
+                    <input type="tel" placeholder="Введите номер" class="contacts__phone tel">
+                    <input type="hidden" id="saveindexPhone">
+                    <select class="contacts__select" name="group">
+                        <option value="0">Выберите группу</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button class="button__all _groups">Сохранить</button>
+                    <button class="button__all change">Изменить</button>
+                </div>
+            </fomr>
+        </nav>
+    </div>
+
+    <!--    ///////////////////////////////2///////////////////////////////////////-->
+
+    <div data-modal-window="my_modal2" class="modal">
+        <nav id="popup-cont" class="header__contacts contacts">
+            <div class="contacts__items">
+                <div class="contacts__title"> Группы контактов</div>
+                <p class="contacts__close close_modal_window _icon-close"></p>
+            </div>
+            <div class="contacts__form">
+                <div class="contacts__block">
+                    <div class="contacts__lIstItem">
+                    </div>
+                    <input type="text" placeholder="Введите название" class="contacts__enter">
+                </div>
+                <div class="button">
+                    <button class="button__all _bWhiteCBlue">Добавить</button>
+                    <button class="button__all _groups save">Сохранить</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--    //////////////////////////////////////////////////////////////////////-->
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a class="logo _icon-contact" href="">Книга контактов</a>
+            </div>
+            <div class="header__block button">
+                <a data-modal-btn="my_modal1" href="#" id="open" class="button__all _plus ">Добавить контакт</a>
+                <a data-modal-btn="my_modal2" href="#" id="open-cont" class="button__all _groups">Группы</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+
+            <div class="main__groups">
+
+                <div class="main__contacts">
+
+                </div>
+            </div>
+
+            <p class="main__title">Список контактов пуст</p>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+</div>
+</body>
+<!--<script src="./js/bootstrap.bundle.min.js"></script>-->
+<script src="./js/script.js"></script>
+<script src="https://kit.fontawesome.com/86a7cda228.js" crossorigin="anonymous"></script>
+</html>
